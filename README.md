@@ -1,6 +1,8 @@
 Welcome to the Event Planner Web App!
 Hey there! 👋 Welcome to our simple yet effective Event Planner Web Application! This little tool helps you organize your events hassle-free.
 
+Link to the website: https://00014216.github.io/WT_CW2_Sem_2/
+
 Getting Started
 Getting started with our app is as easy as pie! Just follow these simple steps:
 
