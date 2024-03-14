@@ -15,8 +15,9 @@ Add Events: Have an event coming up? Just fill in the event name, place, date/ti
 Edit Events: Made a mistake or need to update some details? Simply click on the "Edit" button to make changes to existing event information.
 Delete Events: No longer need an event listed? Just click on "Delete" to remove it from the list.
 
-Understanding the Files
+Understanding the Files - 
 index.html: This file is where the magic happens! It contains the structure of our web page, including the form to input event details and the table to display them.
+
 script.js: Here's where we handle all the behind-the-scenes work with JavaScript. It manages form submission, validation, adding, editing, and deleting event information.
 
 Dependencies
@@ -28,3 +29,7 @@ Authors
 Acknowledgments
 This application was created as part of our Web Technology module requirements.
 Remember, the design and functionalities are just for show and don't represent any real company or service.
+
+
+
+
