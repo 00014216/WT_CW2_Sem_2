@@ -14,10 +14,11 @@ What Can You Do?
 Add Events: Have an event coming up? Just fill in the event name, place, date/time, and your email, and hit "Submit" to add it to the list.
 Edit Events: Made a mistake or need to update some details? Simply click on the "Edit" button to make changes to existing event information.
 Delete Events: No longer need an event listed? Just click on "Delete" to remove it from the list.
+
 Understanding the Files
 index.html: This file is where the magic happens! It contains the structure of our web page, including the form to input event details and the table to display them.
 script.js: Here's where we handle all the behind-the-scenes work with JavaScript. It manages form submission, validation, adding, editing, and deleting event information.
-style.css: (Not included here) You can also add a separate CSS file for styling if you'd like.
+
 Dependencies
 We use Bootstrap for styling our application, making it look snazzy without too much effort on our part.
 
