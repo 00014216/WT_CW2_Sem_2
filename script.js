@@ -15,9 +15,9 @@ function showAlert(message, className){
 
 // Clear All Data
 function clearFields(){
-    document.querySelector("#firstName").value = "";
-    document.querySelector("#lastName").value = "";
-    document.querySelector("#rollNo").value = "";
+    document.querySelector("#eventName").value = "";
+    document.querySelector("#datetimeName").value = "";
+    document.querySelector("#emailNo").value = "";
 }
 
 // Add Data
@@ -26,12 +26,12 @@ document.querySelector("#student-form").addEventListener("submit", (e) =>{
     e.preventDefault();
 
     // Get Form Values
-    const firstName = document.querySelector("#firstName").value
-    const lastName = document.querySelector("#lastName").value
-    const rollNo = document.querySelector("#rollNo").value
+    const eventName = document.querySelector("#eventName").value
+    const datetimeName = document.querySelector("#datetimeName").value
+    const emailNo = document.querySelector("#emailNo").value
 
     // Validate
-    if(firstName == "" || lastName == "" || rollNo == ""){
+    if(eventName == "" || datetimeName == "" || emailNo == ""){
         showAlert("Please fill in all fields", "danger");
     }
     else{
@@ -40,9 +40,9 @@ document.querySelector("#student-form").addEventListener("submit", (e) =>{
             const row = document.createElement("tr");
 
             row.innerHTML = `
-                <td>${firstName}</td>
-                <td>${lastName}</td>
-                <td>${rollNo}</td>
+                <td>${eventName}</td>
+                <td>${datetimeName}</td>
+                <td>${emailNo}</td>
                 <td>
                 <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
                 <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
@@ -52,9 +52,9 @@ document.querySelector("#student-form").addEventListener("submit", (e) =>{
             showAlert("Event Info Added", "success");
         }
         else{
-            selectedRow.children[0].textContent = firstName;
-            selectedRow.children[1].textContent = lastName;
-            selectedRow.children[2].textContent = rollNo;
+            selectedRow.children[0].textContent = eventName;
+            selectedRow.children[1].textContent = datetimeName;
+            selectedRow.children[2].textContent = emailNo;
             selectedRow = null;
             showAlert("Event Info Edited", "Info");
         }
@@ -69,9 +69,9 @@ document.querySelector("#student-list").addEventListener("click", (e) =>{
     target = e.target;
     if(target.classList.contains("edit")){
         selectedRow = target.parentElement.parentElement;
-        document.querySelector("#firstName").value = selectedRow.children[0].textContent;
-        document.querySelector("#lasstName").value = selectedRow.children[1].textContent;
-        document.querySelector("#rollNo").value = selectedRow.children[2].textContent;
+        document.querySelector("#eventName").value = selectedRow.children[0].textContent;
+        document.querySelector("#datetimeName").value = selectedRow.children[1].textContent;
+        document.querySelector("#emailNo").value = selectedRow.children[2].textContent;
     }
 });
 
